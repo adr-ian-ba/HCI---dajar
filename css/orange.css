@@ -49,7 +49,10 @@ html {
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   -ms-overflow-style: scrollbar;
-  -webkit-tap-highlight-color: transparent; }
+  -webkit-tap-highlight-color: transparent; 
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
 
 @-ms-viewport {
   width: device-width; }
@@ -65,7 +68,11 @@ body {
   line-height: 1.5;
   color: #CFD8DC;
   text-align: left;
-  background-color: #000000; }
+  background-color: #000000; 
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+
+}
 
 [tabindex="-1"]:focus {
   outline: 0 !important; }
