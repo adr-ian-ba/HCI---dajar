@@ -167,7 +167,7 @@
         <div class="row">
             <div class="col-md-6 mx-auto text-center">
                 <h2 class="text-white heading-black">Choose your Track Now!</h2>
-                <p class="text-light lead">We offer 2 track for you to choose</p>
+                <p class="text-light lead">We offer tracks for you to choose</p>
             </div>
         </div>
         <!--pricing tables-->
@@ -220,9 +220,11 @@
                                 <li>- structured lessons to help you learn
                                 </li>
                             </ul>
-                            <button class="btn btn-primary" data-toggle="modal" data-target="#signupModal">
-                                Sign Up
-                            </button>
+                            <a href="https://docs.google.com/forms/d/1v5fUYvI3Xt4DHCNHXzR_1fVg3Aj4juZoF56OpDqlQiA/viewform?edit_requested=true" target="_blank">
+                                <button class="btn btn-primary" data-toggle="modal" data-target="#signupModal">
+                                    Sign Up
+                                </button>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -252,9 +254,12 @@
             <div class="col-md-8 col-12 divider top-divider mx-auto pt-5 text-center">
                 <h3 id="signup">Sign Up Now</h3>
                 <!-- <p class="mb-4">Send your information, so we can reach out to you 🤗🤗</p> -->
-                <button class="btn btn-primary" data-toggle="modal" data-target="#signupModal">
+                 <a href="https://docs.google.com/forms/d/1v5fUYvI3Xt4DHCNHXzR_1fVg3Aj4juZoF56OpDqlQiA/viewform?edit_requested=true" target="_blank">
+                        <button class="btn btn-primary" data-toggle="modal" data-target="#signupModal">
                     Sign Up
                 </button>
+                 </a>
+
             </div>
         </div>
         
@@ -375,40 +380,6 @@
     <i class="fa fa-angle-up" aria-hidden="true"></i>
 </div>
 
-<!-- SignUp Modal -->
-<div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-labelledby="signupModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="signupModalLabel">Sign Up</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body">
-                <form id="signupForm">
-                    <div class="form-group">
-                        <label for="name">Name</label>
-                        <input type="text" class="form-control" id="name" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email </label>
-                        <input type="email" class="form-control" id="email" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="faculty">Faculty </label>
-                        <input type="text" class="form-control" id="faculty" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="password">Phone Number</label>
-                        <input type="password" class="form-control" id="password" required>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Sign Up</button>
-                </form>
-            </div>
-        </div>
-    </div>
-</div>
 
 
 <!-- theme switcher (FOR DEMO ONLY - REMOVE FROM PRODUCTION)-->
@@ -442,23 +413,5 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
 <script src="js/scripts.js"></script>
 
-<script>
-    feather.replace()
-    $(document).ready(function () {
-        $('.slick-about').slick({
-            infinite: true,
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            arrows: false,
-            dots: true
-        });
-        
-        $('#signupForm').on('submit', function (e) {
-            e.preventDefault();
-            // handle form submission here
-            alert('Form submitted');
-        });
-    });
-</script>
 </body>
 </html>
