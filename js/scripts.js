@@ -116,12 +116,16 @@ class GoogleFormSubmitter{
 const googleForm = new GoogleFormSubmitter("https://docs.google.com/forms/u/0/d/e/1FAIpQLScx_iML5pIKkgy2HVcF43YUPj3lGW5a_0Lgf0pT9C-cKdDtog/formResponse");
 
 function submitGoogleForm() {
-   
-    googleForm.setDetail("62044878", gIT("name"));
-    googleForm.setDetail("1351592364", gIT("email"));
-    googleForm.submit();
-    console.log("modal signup")
+   if(!gIT("name") && !gIT("email")){
+    
+   }else{
+        googleForm.setDetail("62044878", gIT("name"));
+        googleForm.setDetail("1351592364", gIT("email"));
+        googleForm.submit();
+        console.log("modal signup")
 
-    $('#signupModal').modal('hide');
-    $('#confirmationModal').modal('show');
+        $('#signupModal').modal('hide');
+        $('#confirmationModal').modal('show');
+   }
+
 }
