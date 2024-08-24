@@ -7866,3 +7866,11 @@ footer h5 {
   min-height: 35rem;
   object-fit: cover;
 }
+
+.free-trial{
+  margin:0;
+}
+
+.confirm-modal-text{
+  color: black;
+}

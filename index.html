@@ -192,22 +192,25 @@
                             </a>
                         </div>
                     </div> -->
-                    <!-- <div class="card">
+                    <div class="card">
                         <div class="card-body">
-                            <h3 class="card-title pt-3">Normal</h3>
-                            <h2 class="card-title text-info mb-0 pt-4">IDR 75K</h2>
-                            <div class="text-muted font-weight-medium mt-2">per course</div>
+                            <h3 class="card-title pt-3">Free Trial</h3>
+                            <h2 class="card-title text-info mb-0 pt-4">Free</h2>
                             <ul class="list-unstyled pricing-list">
-                                <li>list of benefit joining</li>
-                                <li>list of benefit joining</li>
-                                <li>list of benefit joining</li>
-                                <li>list of benefit joining</li>
+                                <br/>
+                                <br/>
+                                <h5 class="free-trial">Class will be held</h5>
+                                <h5 class="free-trial">on</h5>
+                                <h5 class="free-trial">xx-xx-xxxx</h5>
+                                <h2>xx:xx:xx</h2>
+                                <br/>
+
                             </ul>
                             <button class="btn btn-info" data-toggle="modal" data-target="#signupModal">
                                 Sign Up
                             </button>
                         </div>
-                    </div> -->
+                    </div>
                     <div class="card">
                         <div class="card-body">
                             <h3 class="card-title pt-3">Fast Track</h3>
@@ -223,7 +226,7 @@
                                 </li>
                             </ul>
                             <a href="https://docs.google.com/forms/d/1v5fUYvI3Xt4DHCNHXzR_1fVg3Aj4juZoF56OpDqlQiA/viewform?edit_requested=true" target="_blank">
-                                <button class="btn btn-primary" data-toggle="modal" data-target="#signupModal">
+                                <button class="btn btn-primary">
                                     Sign Up
                                 </button>
                             </a>
@@ -408,12 +411,67 @@
     </div>
 </div> -->
 
+<!-- Sign Up Modal -->
+<div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-labelledby="signupModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="signupModalLabel">Sign Up</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <!-- Sign Up Form -->
+                <form>
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" class="form-control" id="name" placeholder="Enter your full name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email address</label>
+                        <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                    </div>
+                    <button type="button" class="btn btn-primary" onclick="submitGoogleForm()">Sign Up</button>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> -->
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="confirmationModal" tabindex="-1" role="dialog" aria-labelledby="confirmationModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="confirmationModalLabel">Thank You!</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <h1 class="confirm-modal-text">
+                    Your sign-up was successful. We will be in touch soon!
+                </h1>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.7.3/feather.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+<!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> -->
 <script src="js/scripts.js"></script>
 <script type='text/javascript'>
     window.smartlook||(function(d) {
