@@ -470,7 +470,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.7.3/feather.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
 <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> -->
+<script  src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> -->
 <script src="js/scripts.js"></script>
 <script type='text/javascript'>
     window.smartlook||(function(d) {
@@ -494,23 +494,21 @@
                 return;
             }
 
+            const day = Math.floor((timeLeft % (1000 **60 * 60 * 24 * 30)) / (1000 * 60 * 60 * 24))
             const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
             const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
             const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
 
             countdownElement.textContent = 
-                `${String(hours).padStart(2, '0')}:${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`;
+                `${String(day).padStart(2, '0')}:${String(hours).padStart(2, '0')}:${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`;
         }
 
-        // Update the timer every second
         const intervalId = setInterval(updateTimer, 1000);
 
-        // Initialize the timer immediately
         updateTimer();
     }
 
-    // Set the end time for the countdown (example: 1 minute from now)
-    const endTime = new Date("2024-08-30");
+    const endTime = new Date("08-30-2024");
     startCountdown(endTime);
     </script>
 
